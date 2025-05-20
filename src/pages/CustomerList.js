@@ -32,7 +32,7 @@ function CustomerList() {
   const fetchCustomers = async () => {
     try {
       setLoading(true);
-      const { data } = await axios.get('http://localhost:5000/api/customers', {
+      const { data } = await axios.get('https://4f19-160-238-92-78.ngrok-free.app/api/customers', {
         params: {
           page: currentPage,
           limit: itemsPerPage,
